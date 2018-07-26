@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.platzi.concentrese.opciones.TipoJuegoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tipo de juego"
+            android:textSize="30dp"
+            android:padding="50dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorText"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="5dp"
+            android:text="Facil"
+            android:padding="5dp"
+            android:onClick="nivelFacil"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginVertical="5dp"
+            android:padding="5dp"
+            android:layout_marginHorizontal="20dp"
+            android:text="medio"
+            android:textColor="@color/colorText"
+            android:onClick="nivelMedio"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginVertical="5dp"
+            android:padding="5dp"
+            android:layout_marginHorizontal="20dp"
+            android:text="dificil"
+            android:onClick="nivelDificil"
+            android:textColor="@color/colorText"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/drawing"
+            android:layout_gravity="right"
+            />
+
+    </LinearLayout>
+</LinearLayout>

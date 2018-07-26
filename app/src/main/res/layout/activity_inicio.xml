@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.platzi.concentrese.InicioActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/colorPrimary"
+            android:id="@+id/relativeLayout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="bienvenido"
+                android:textColor="@color/colorText"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/drawing"
+
+            />
+
+        <Button
+            android:id="@+id/BtnInicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/paddingBtnInicio"
+            android:layout_marginHorizontal="20dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/BtnInicio"
+            android:textColor="@color/colorText"
+            android:layout_marginVertical="5dp"
+            android:onClick="iniciar"
+            />
+
+        <Button
+            android:id="@+id/BtnPuntage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/paddingBtnInicio"
+            android:layout_marginHorizontal="20dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/BtnPuntage"
+            android:textColor="@color/colorText"
+            android:layout_marginVertical="5dp"
+            android:onClick="puntagesAltos"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/paddingBtnInicio"
+            android:layout_marginHorizontal="20dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/BtnConfiguracion"
+            android:textColor="@color/colorText"
+            android:layout_marginVertical="5dp"
+            android:onClick="configuracion"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+

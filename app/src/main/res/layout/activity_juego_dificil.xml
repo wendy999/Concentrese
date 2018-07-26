@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.platzi.concentrese.opciones.JuegoDificilActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:id="@+id/relativeLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dificil"
+            android:textColor="@color/colorText"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tlfacil"/>
+
+        <TextView
+            android:id="@+id/tlNumeroIntentos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Número Intentos: 0"
+            android:textColor="@color/colorText"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"/>
+
+        <Chronometer
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/crmTiempo"
+            android:textColor="@color/colorText"
+            android:textStyle="bold"
+            android:textSize="20dp"
+
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="21dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:padding="15dp"
+        android:gravity="center"
+        android:layout_marginTop="50dp">
+
+        <ImageView
+            android:id="@+id/carta1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="6dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/carta"
+            android:onClick="visualizarCarta" />
+
+        <ImageView
+            android:id="@+id/carta2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/carta1"
+            android:layout_marginLeft="13dp"
+            android:layout_marginStart="13dp"
+            android:layout_toEndOf="@+id/carta1"
+            android:layout_toRightOf="@+id/carta1"
+            android:background="@drawable/carta"
+            android:onClick="visualizarCarta" />
+
+
+        <ImageView
+            android:id="@+id/carta3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/carta2"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/carta"
+            android:onClick="visualizarCarta" />
+
+        <ImageView
+            android:id="@+id/carta4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/carta3"
+            android:layout_marginLeft="23dp"
+            android:layout_marginStart="23dp"
+            android:layout_toEndOf="@+id/carta3"
+            android:layout_toRightOf="@+id/carta3"
+            android:background="@drawable/carta"
+            android:onClick="visualizarCarta" />
+
+        <ImageView
+            android:id="@+id/carta5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/carta1"
+            android:layout_alignStart="@+id/carta1"
+            android:layout_below="@+id/carta1"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/carta"
+            android:onClick="visualizarCarta" />
+
+        <ImageView
+            android:id="@+id/carta6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/carta2"
+            android:layout_alignStart="@+id/carta2"
+            android:layout_alignTop="@+id/carta5"
+            android:background="@drawable/carta"
+            android:onClick="visualizarCarta" />
+
+
+        <ImageView
+            android:id="@+id/carta7"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/carta3"
+            android:layout_alignStart="@+id/carta3"
+            android:layout_alignTop="@+id/carta6"
+            android:background="@drawable/carta"
+            android:onClick="visualizarCarta" />
+
+
+        <ImageView
+            android:id="@+id/carta8"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/carta4"
+            android:layout_alignStart="@+id/carta4"
+            android:layout_alignTop="@+id/carta7"
+            android:background="@drawable/carta"
+            android:onClick="visualizarCarta" />
+
+        <ImageView
+            android:id="@+id/carta9"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/carta5"
+            android:layout_alignStart="@+id/carta5"
+            android:layout_below="@+id/carta5"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/carta"
+            android:onClick="visualizarCarta" />
+
+        <ImageView
+            android:id="@+id/carta10"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/carta6"
+            android:layout_alignStart="@+id/carta6"
+            android:layout_alignTop="@+id/carta9"
+            android:background="@drawable/carta"
+            android:onClick="visualizarCarta" />
+
+
+        <ImageView
+            android:id="@+id/carta11"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/carta7"
+            android:layout_alignStart="@+id/carta7"
+            android:layout_alignTop="@+id/carta10"
+            android:background="@drawable/carta"
+            android:onClick="visualizarCarta" />
+
+        <ImageView
+            android:id="@+id/carta12"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/carta8"
+            android:layout_alignStart="@+id/carta8"
+            android:layout_alignTop="@+id/carta11"
+            android:background="@drawable/carta"
+            android:onClick="visualizarCarta" />
+
+        <ImageView
+            android:id="@+id/carta13"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/carta9"
+            android:layout_alignStart="@+id/carta9"
+            android:layout_below="@+id/carta9"
+            android:layout_marginTop="19dp"
+            android:background="@drawable/carta"
+            android:onClick="visualizarCarta" />
+
+        <ImageView
+            android:id="@+id/carta14"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/carta10"
+            android:layout_alignStart="@+id/carta10"
+            android:layout_alignTop="@+id/carta13"
+            android:background="@drawable/carta"
+            android:onClick="visualizarCarta" />
+
+
+        <ImageView
+            android:id="@+id/carta15"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/carta11"
+            android:layout_alignStart="@+id/carta11"
+            android:layout_alignTop="@+id/carta14"
+            android:background="@drawable/carta"
+            android:onClick="visualizarCarta" />
+
+        <ImageView
+            android:id="@+id/carta16"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/carta12"
+            android:layout_alignStart="@+id/carta12"
+            android:layout_alignTop="@+id/carta15"
+            android:background="@drawable/carta"
+            android:onClick="visualizarCarta" />
+
+        <ImageView
+            android:id="@+id/carta17"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/carta13"
+            android:layout_alignStart="@+id/carta13"
+            android:layout_alignTop="@+id/carta18"
+            android:background="@drawable/carta"
+            android:onClick="visualizarCarta" />
+
+        <ImageView
+            android:id="@+id/carta18"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/carta14"
+            android:layout_alignStart="@+id/carta14"
+            android:layout_alignTop="@+id/carta19"
+            android:background="@drawable/carta"
+            android:onClick="visualizarCarta" />
+
+
+        <ImageView
+            android:id="@+id/carta19"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/carta15"
+            android:layout_alignStart="@+id/carta15"
+            android:layout_alignTop="@+id/carta20"
+            android:background="@drawable/carta"
+            android:onClick="visualizarCarta" />
+
+        <ImageView
+            android:id="@+id/carta20"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/carta16"
+            android:layout_alignStart="@+id/carta16"
+            android:layout_below="@+id/carta16"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/carta"
+            android:onClick="visualizarCarta" />
+
+        <ImageView
+            android:id="@+id/carta21"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/carta17"
+            android:layout_alignStart="@+id/carta17"
+            android:layout_below="@+id/carta17"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/carta"
+            android:onClick="visualizarCarta" />
+
+        <ImageView
+            android:id="@+id/carta22"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/carta18"
+            android:layout_alignStart="@+id/carta18"
+            android:layout_alignTop="@+id/carta21"
+            android:background="@drawable/carta"
+            android:onClick="visualizarCarta" />
+
+
+        <ImageView
+            android:id="@+id/carta23"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/carta19"
+            android:layout_alignStart="@+id/carta19"
+            android:layout_alignTop="@+id/carta22"
+            android:background="@drawable/carta"
+            android:onClick="visualizarCarta" />
+
+        <ImageView
+            android:id="@+id/carta24"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/carta20"
+            android:layout_alignStart="@+id/carta20"
+            android:layout_alignTop="@+id/carta23"
+            android:background="@drawable/carta"
+            android:onClick="visualizarCarta" />
+
+    </RelativeLayout>
+</RelativeLayout>
+
